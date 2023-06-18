@@ -24,7 +24,7 @@ dircreate() {
 fun_botOnOff() {
   dircreate
   [[ ! -f /root/multi/bot.conf ]] && {
-    echo -e "SquidVPN Bot Panel Installer
+    echo -e "Lendir Bot Panel Installer
         "
     [[ ! -f /root/ResBotAuth ]] && {
       echo -ne "Input your Bot TOKEN : "
@@ -34,9 +34,9 @@ fun_botOnOff() {
       read adm_ids
       echo "Admin_ID: $adm_ids" >>/root/ResBotAuth
     }
-    echo -ne "Bot Username, Dont use '@' [Ex: squidvpn_bot] : "
+    echo -ne "Bot Username, Dont use '@' [Ex: lendir_bot] : "
     read bot_user
-    [[ -z $bot_user ]] && bot_user="squidvpn_bot"
+    [[ -z $bot_user ]] && bot_user="lendirvpn_bot"
     echo ""
     echo -ne "Limit Free Config [default:1] : "
     read limit_pnl
